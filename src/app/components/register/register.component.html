@@ -1,0 +1,62 @@
+<h1 class="title">
+    <p>hostel booking</p>
+</h1>
+
+<div class="columns">
+    <div class="column is-half is-offset-one-quarter">
+        <form>
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <br>
+                        <div class="field">
+                            <p class="control">
+                                <input class="input is-success is-large" type="text" ng-model="ctrl.model.name" placeholder="Name">
+                                <!-- <span class="tag is-danger">Invalid Name</span> -->
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control">
+                                <input class="input is-success is-large" type="text" ng-model="ctrl.model.document" placeholder="Document">
+                                <!-- <span class="tag is-danger">Invalid Name</span> -->
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control">
+                                <input class="input is-success is-large" type="text" ng-model="ctrl.model.birthDate" placeholder="Birthday">
+                                <!-- <span class="tag is-danger">Invalid Name</span> -->
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control">
+                                <span class="select is-success is-large">
+                                    <select ng-model="ctrl.model.genre">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </span>
+                                <!-- <span class="tag is-danger">Invalid Name</span> -->
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input is-success is-large" type="email" ng-model="ctrl.model.user.email" placeholder="E-mail">
+                                <!-- <span class="tag is-danger">Invalid Name</span> -->
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input is-success is-large" type="password" ng-model="ctrl.model.user.password" placeholder="Senha">
+                                <!-- <span class="tag is-danger">Invalid Name</span> -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <a class="card-footer-item">Register</a>
+                    <a class="card-footer-item" href="/#!/login">Back to Login </a>
+                </footer>
+            </div>
+        </form>
+    </div>
+</div>
