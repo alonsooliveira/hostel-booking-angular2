@@ -4,35 +4,35 @@
 
 <div class="columns">
     <div class="column is-half is-offset-one-quarter">
-        <form>
+        <form> 
             <div class="card">
                 <div class="card-content">
                     <div class="content">
                         <br>
                         <div class="field">
                             <p class="control">
-                                <input class="input is-success is-large" type="text" ng-model="ctrl.model.name" placeholder="Name">
+                            <input class="input is-success is-large" type="text" placeholder="Name" name="name" [(ngModel)]="guest.name">
                                 <!-- <span class="tag is-danger">Invalid Name</span> -->
                             </p>
                         </div>
                         <div class="field">
                             <p class="control">
-                                <input class="input is-success is-large" type="text" ng-model="ctrl.model.document" placeholder="Document">
+                                <input class="input is-success is-large" type="text" placeholder="Document" name="document" [(ngModel)]="guest.document">
                                 <!-- <span class="tag is-danger">Invalid Name</span> -->
                             </p>
                         </div>
                         <div class="field">
                             <p class="control">
-                                <input class="input is-success is-large" type="text" ng-model="ctrl.model.birthDate" placeholder="Birthday">
+                                <input class="input is-success is-large" type="text" placeholder="Birthday" name="birthday" [(ngModel)]="guest.birthday">
                                 <!-- <span class="tag is-danger">Invalid Name</span> -->
                             </p>
                         </div>
                         <div class="field">
                             <p class="control">
                                 <span class="select is-success is-large">
-                                    <select ng-model="ctrl.model.genre">
-                                        <option>Male</option>
-                                        <option>Female</option>
+                                    <select name="genre" [(ngModel)]="guest.genre">
+                                        <option value="true">Male</option>
+                                        <option value="false">Female</option>
                                     </select>
                                 </span>
                                 <!-- <span class="tag is-danger">Invalid Name</span> -->
@@ -40,21 +40,21 @@
                         </div>
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input is-success is-large" type="email" ng-model="ctrl.model.user.email" placeholder="E-mail">
+                                <input class="input is-success is-large" type="email" placeholder="E-mail" name="email" [(ngModel)]="guest.User.email">
                                 <!-- <span class="tag is-danger">Invalid Name</span> -->
                             </p>
                         </div>
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input is-success is-large" type="password" ng-model="ctrl.model.user.password" placeholder="Senha">
+                                <input class="input is-success is-large" type="password" placeholder="Senha" name="password" [(ngModel)]="guest.User.password">
                                 <!-- <span class="tag is-danger">Invalid Name</span> -->
                             </p>
                         </div>
                     </div>
                 </div>
                 <footer class="card-footer">
-                    <a class="card-footer-item">Register</a>
-                    <a class="card-footer-item" href="/#!/login">Back to Login </a>
+                    <a class="card-footer-item" (click)="submit()">Register</a>
+                    <a class="card-footer-item" routerLink="/">Back to Login </a>
                 </footer>
             </div>
         </form>
